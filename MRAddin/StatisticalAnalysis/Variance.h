@@ -1,0 +1,25 @@
+#ifndef MR_STATISTICAL_ANALYSIS_VARIANCE_H
+#define MR_STATISTICAL_ANALYSIS_VARIANCE_H
+
+#ifndef LACKS_PRAGMA_ONCE
+#pragma once
+#endif
+
+#include "StatisticalAnalysis/API.h"
+////////////////////////////////////////////////////////////////////////////////
+namespace mr
+{
+    namespace statistical_analysis
+    {
+////////////////////////////////////////////////////////////////////////////////
+using namespace boost;
+////////////////////////////////////////////////////////////////////////////////
+bool     STATISTICAL_ANALYSIS_EXPIMP isValidVariance ( double std_deviation, double std_error, uint32_t  count );
+double   STATISTICAL_ANALYSIS_EXPIMP stdDev          ( uint32_t count, double sum, double sum_of_squares );
+double   STATISTICAL_ANALYSIS_EXPIMP stdErr          ( uint32_t count, double sum, double sum_of_squares );
+////////////////////////////////////////////////////////////////////////////////
+    }   // namespace statistical_analysis
+}   // namespace mr
+////////////////////////////////////////////////////////////////////////////////
+#endif // MR_STATISTICAL_ANALYSIS_VARIANCE_H
+////////////////////////////////////////////////////////////////////////////////

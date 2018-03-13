@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD2A94F5-2DE4-431B-87D1-3C5282E75585}</ProjectGuid>
+    <RootNamespace>StatisticalAnalysis</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\$(SolutionName).props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\$(SolutionName).props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\$(SolutionName).props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\$(SolutionName).props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;STATISTICAL_ANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies />
+    </Link>
+    <Bscmake>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl />
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;STATISTICAL_ANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;STATISTICAL_ANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies />
+    </Link>
+    <Bscmake>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl />
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;STATISTICAL_ANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ANOVA_F.cpp" />
+    <ClCompile Include="Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ConserveMeanImputer.cpp" />
+    <ClCompile Include="CorrelationResult.cpp" />
+    <ClCompile Include="DefaultMatrixInversionPolicy.cpp" />
+    <ClCompile Include="FtSignificance.cpp" />
+    <ClCompile Include="LagAccumulator.cpp" />
+    <ClCompile Include="LagSequence.cpp" />
+    <ClCompile Include="PopulationSummary.cpp" />
+    <ClCompile Include="PredictedValueFunctor.cpp" />
+    <ClCompile Include="RegressionMask.cpp" />
+    <ClCompile Include="RegressionNormalizer.cpp" />
+    <ClCompile Include="RegressionResult.cpp" />
+    <ClCompile Include="RegressionResultBinder.cpp" />
+    <ClCompile Include="Response.cpp" />
+    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="StatisticsResult.cpp" />
+    <ClCompile Include="Synopsis.cpp" />
+    <ClCompile Include="Variance.cpp" />
+    <ClCompile Include="R2Calculator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Accumulation.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\AccumulationGroup.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\ANOVA_F.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\API.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\cancelable_lu.hpp" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\CholeskyDecomposition.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\ConserveMeanImputer.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\CorrelationResult.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\CovarianceMatrixGenerator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\DefaultMatrixInversionPolicy.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Determinant.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Episode.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\EpisodePartition.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\EpisodeTag.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\GaussJordanInversion.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\GLSAccumulation.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\GLSAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Imputer.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\LagAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\LaggingOptions.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\LagSequence.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\LinearRegression.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\LinearRegressionCalculator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MatrixDefinitions.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MatrixInversionCanceled.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MatrixInversionPolicy.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MatrixLUInverter.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MatrixSVDInverter.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\MeanAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\ModellingOptions.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\NumericContainersConfiguration.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Observation.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\ObservationAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\OLSAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\PartitionSequence.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\PopulationSummary.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\PredictedValueFunctor.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\RegressionMask.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\RegressionNormalizer.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\RegressionResult.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\RegressionResultBinder.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Response.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Sample.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\SimultaneousEpisodes.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\SortPredicates.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\StatisticsResult.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\StdAccumulation.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\SwitchedContainersConfig.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Synopsis.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\Variance.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\VarianceAccumulator.h" />
+    <ClInclude Include="..\MRAddin\StatisticalAnalysis\R2Calculator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\MRAddin\StatisticalAnalysis\Accumulation.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\AccumulationGroup.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\Episode.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\EpisodePartition.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\GLSAccumulation.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\GLSAccumulator.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\LinearRegression.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\LinearRegressionCalculator.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\Observation.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\ObservationAccumulator.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\OLSAccumulator.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\PartitionSequence.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\SimultaneousEpisodes.inl" />
+    <None Include="..\MRAddin\StatisticalAnalysis\StdAccumulation.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contract\Contract.vcxproj">
+      <Project>{9104ef4b-e8ee-4928-9b15-08360bd99474}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DateTime\DateTime\DateTime.vcxproj">
+      <Project>{9d558405-98dd-4bcb-bd4d-dca8d2d9a042}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

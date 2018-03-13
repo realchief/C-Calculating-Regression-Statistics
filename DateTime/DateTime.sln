@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DateTblGen", "DateTblGen\DateTblGen.vcproj", "{744B5941-ABB1-4AFF-8849-3C2CB7F04549}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LunarTblGen", "LunarTblGen\LunarTblGen.vcproj", "{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DateTime", "DateTime\DateTime.vcproj", "{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DateTimeTest", "DateTimeTest\DateTimeTest.vcproj", "{B9EB759A-9601-44DF-B76D-34D59832CFFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Debug Test
+		ConfigName.2 = Release
+		ConfigName.3 = Release Test
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.0 = {744B5941-ABB1-4AFF-8849-3C2CB7F04549}
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.0 = {39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.0 = {9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Debug.ActiveCfg = Debug|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Debug.Build.0 = Debug|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Debug Test.ActiveCfg = Debug|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Debug Test.Build.0 = Debug|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Release.ActiveCfg = Release|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Release.Build.0 = Release|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Release Test.ActiveCfg = Release|Win32
+		{744B5941-ABB1-4AFF-8849-3C2CB7F04549}.Release Test.Build.0 = Release|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Debug.ActiveCfg = Debug|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Debug.Build.0 = Debug|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Debug Test.ActiveCfg = Debug|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Debug Test.Build.0 = Debug|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Release.ActiveCfg = Release|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Release.Build.0 = Release|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Release Test.ActiveCfg = Release|Win32
+		{39D8684F-5CBB-49B7-B1D3-8C4F436F1A9B}.Release Test.Build.0 = Release|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Debug.ActiveCfg = Debug|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Debug.Build.0 = Debug|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Debug Test.ActiveCfg = Debug Test|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Debug Test.Build.0 = Debug Test|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Release.ActiveCfg = Release|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Release.Build.0 = Release|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Release Test.ActiveCfg = Release Test|Win32
+		{9D558405-98DD-4BCB-BD4D-DCA8D2D9A042}.Release Test.Build.0 = Release Test|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Debug.ActiveCfg = Debug|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Debug Test.ActiveCfg = Debug|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Debug Test.Build.0 = Debug|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Release.ActiveCfg = Release|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Release Test.ActiveCfg = Release|Win32
+		{B9EB759A-9601-44DF-B76D-34D59832CFFB}.Release Test.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -18,6 +18,8 @@ using namespace infrastructure::math;
 
 ///
 /// Helper method for calculating the standard deviation
+/// Reference1: http://vassarstats.net/corr_stats.html
+/// Reference2: http://www.alcula.com/calculators/statistics/linear-regression/
 ///
 double stdDev( uint32_t count, double sum, double sum_of_squares ) 
 {
@@ -44,6 +46,8 @@ double stdDev( uint32_t count, double sum, double sum_of_squares )
 
 ///
 /// Helper method for calculating the standard error
+/// Reference1: http://www.statisticshowto.com/find-standard-error-regression-slope/
+/// Reference2: http://www.alcula.com/calculators/statistics/linear-regression/
 ///
 double stdErr( uint32_t count, double sum, double sum_of_squares )
 {
@@ -71,6 +75,8 @@ double stdErr( uint32_t count, double sum, double sum_of_squares )
 ///
 /// Helper method returning true if the standard deviation and standard
 //  error are consistent.
+/// Reference1: http://www.statisticshowto.com/find-standard-error-regression-slope/
+/// Reference2: http://www.alcula.com/calculators/statistics/linear-regression/
 ///
 bool isValidVariance( double std_deviation, double std_error, uint32_t  count )
 {

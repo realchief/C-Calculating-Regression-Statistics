@@ -43,6 +43,9 @@ LagAccumulator<by_records>::~LagAccumulator(  )
 
 ///
 /// Add the observation to the accumulation
+/// Reference: https://academic.oup.com/intqhc/article/23/3/331/1792904
+/// Reference: http://www-stat.wharton.upenn.edu/~stine/mich/Lecture3.pdf
+/// Reference: http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2656.2003.00748.x/full
 ///
 template<bool by_records> inline void
 LagAccumulator<by_records>::add( const Episode& observation )
@@ -86,6 +89,8 @@ LagAccumulator<by_records>::add( const Episode& observation )
 
 ///
 /// Return the records-based lagged observation
+/// Reference: http://people.duke.edu/~rnau/regnotes.htm
+/// Reference: https://stats.stackexchange.com/questions/25889/lagging-over-a-grouped-time-series
 ///
 template< > inline const Episode* 
 LagAccumulator<true>::findLaggedObservation( const Episode& observation )

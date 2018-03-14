@@ -17,7 +17,10 @@ namespace mr
 //  The natural logarithm of the gamma function from NR page 214
 //
 //  Gamma(z) = Integrate[t^(z-1) e^(-t), t -> {0,Infinity}]
-//
+/// Reference: https://stats.stackexchange.com/questions/47840/linear-model-with-log-transformed-response-vs-generalized-linear-model-with-log
+/// Reference: https://pdfs.semanticscholar.org/5c09/e09959e61c473034683a20621b62086d421b.pdf
+
+
 double LnGamma(double x)
 {
 	double y, tmp, ser;

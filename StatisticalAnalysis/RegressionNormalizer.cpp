@@ -25,6 +25,9 @@ bool isValidBeta( double beta )
 
 ///
 /// NormalizeResponse Constructor
+/// Reference: https://stats.stackexchange.com/questions/201909/when-to-normalize-data-in-regression
+/// Reference: https://stackoverflow.com/questions/32108179/linear-regression-normalization-vs-standardization
+/// Reference: https://www.quora.com/Do-I-need-to-normalize-values-in-multiple-regression-analysis
 ///
 NormalizeResponse::NormalizeResponse( const RegressionResult& coarse_result )
 :   _mean   ( coarse_result.responseMean() ),

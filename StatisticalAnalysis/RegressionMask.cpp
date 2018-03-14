@@ -39,6 +39,10 @@ RegressionMask::~RegressionMask( )
 {
 }
 ////////////////////////////////////////////////////////////////////////////////
+/// Reference: https://www.quora.com/What-is-the-intuition-behind-the-masking-effects-on-linear-regression-in-multi-class-classification
+/// Reference: https://stackoverflow.com/questions/21447595/how-to-mask-clouds-from-python-numpy-array-for-a-linear-regression-model
+///////////////////////////////////////////////////////////////////////////////
+
 void
 RegressionMask::setInterestingPredictor( uint32_t index, bool on )
 {
@@ -82,6 +86,9 @@ RegressionMask::useAllPredictors( )
 
 ///
 /// Build predictor index from the given predictor mask
+/// Reference: http://anesthesiology.pubs.asahq.org/article.aspx?articleid=1945811
+/// Reference: http://www.airwayworld.com/wp-content/uploads/2006/05/Incidence-and-Predictors-of-Difficult-and-Impossible-Mask-Ventilation.pdf
+/// Reference: http://ieeexplore.ieee.org/document/7539284/?reload=true
 ///
 PredictorIndices
 RegressionMask::indicesOf( const PredictorMask& predictors ) const

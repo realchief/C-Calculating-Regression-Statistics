@@ -15,6 +15,9 @@ namespace mr
 
 ///
 /// Initialising Constructor
+/// Reference: http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients
+/// Reference: https://statistics.laerd.com/stata-tutorials/linear-regression-using-stata.php
+/// Reference: https://dss.princeton.edu/online_help/analysis/interpreting_regression.htm
 ///
 RegressionResult::RegressionResult  ( const RegressionMask& mask,
                                       uint64_t observation_count,
@@ -109,6 +112,10 @@ _prune_group_id(),
 _has_constant( true ) //set true by default so as to use historical r-squared calculation (with constant) by default
 {
 }
+
+/// Reference: http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients
+/// Reference: https://statistics.laerd.com/stata-tutorials/linear-regression-using-stata.php
+/// Reference: https://dss.princeton.edu/online_help/analysis/interpreting_regression.htm
 
 void 
 RegressionResult::setBeta( const RawResults& values )

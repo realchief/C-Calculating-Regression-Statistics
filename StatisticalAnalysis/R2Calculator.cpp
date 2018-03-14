@@ -137,6 +137,9 @@ _chi_2_true_model_response_is_mean()
 	}
 }
 
+/// Reference: https://ncalculators.com/statistics/r-squared-calculator.htm
+/// Reference: https://en.wikipedia.org/wiki/Coefficient_of_determination
+
 double
 R2Calculator::choleskyDecompositionBasedLogDet(const boost::numeric::ublas::symmetric_matrix<double> & the_matrix,
 											   boost::numeric::ublas::symmetric_matrix<double> & inv_matrix) const
@@ -299,6 +302,8 @@ R2Calculator::getNaNPositions(const boost::numeric::ublas::vector<double> & vect
 	return nan_positions;
 }
 										
+/// Reference: https://ncalculators.com/statistics/r-squared-calculator.htm
+/// Reference: https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 double
 R2Calculator::getR2() const
@@ -456,6 +461,9 @@ R2Calculator::processOLSResidualsVector(boost::numeric::ublas::vector<double> tr
 		_chi_2 -= pow(true_resp_min_mean[i], 2) / covariance_squared_per_what[tag.what()];
 	}
 }
+
+/// Reference: https://ncalculators.com/statistics/r-squared-calculator.htm
+/// Reference: https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 double
 R2Calculator::getChi2(const boost::numeric::ublas::matrix<double> & responses_matrix)

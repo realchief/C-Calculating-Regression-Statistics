@@ -38,6 +38,9 @@ Sample::~Sample( )
 
 ///
 /// Calculate and return the sample variance-covariance matrix
+/// Reference: https://stats.stackexchange.com/questions/68151/how-to-derive-variance-covariance-matrix-of-coefficients-in-linear-regression
+/// Reference: http://www.stat.columbia.edu/~fwood/Teaching/w4315/Fall2009/lecture_11
+/// Reference: http://www.stat.cmu.edu/~cshalizi/mreg/15/lectures/13/lecture-13.pdf
 ///
 SymMatrix               
 Sample::covarianceMatrix( ) const

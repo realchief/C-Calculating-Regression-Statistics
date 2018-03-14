@@ -19,6 +19,9 @@ namespace mr
 
 ///
 /// Default Constructor
+/// Reference: http://www.statisticssolutions.com/the-linear-regression-analysis-in-spss/
+/// Reference: http://www.statisticssolutions.com/what-is-linear-regression/
+/// Reference: https://en.wikipedia.org/wiki/Linear_regression
 ///
 StatisticsResult::StatisticsResult()
 :   _value          ( NAN_NOT_SET ),
@@ -30,6 +33,9 @@ StatisticsResult::StatisticsResult()
 
 ///
 /// Initialising Constructor
+/// Reference: http://www.statisticssolutions.com/the-linear-regression-analysis-in-spss/
+/// Reference: http://www.statisticssolutions.com/what-is-linear-regression/
+/// Reference: https://en.wikipedia.org/wiki/Linear_regression
 ///
 StatisticsResult::StatisticsResult( double value )
 :   _value          ( value ),
@@ -65,6 +71,9 @@ StatisticsResult::setSignificance( double significance )
 
 ///
 /// Return true if the value is not a NAN value
+/// Reference: http://www.statisticssolutions.com/the-linear-regression-analysis-in-spss/
+/// Reference: http://www.statisticssolutions.com/what-is-linear-regression/
+/// Reference: https://en.wikipedia.org/wiki/Linear_regression
 ///
 bool
 StatisticsResult::isValid( ) const 

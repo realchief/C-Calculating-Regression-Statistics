@@ -13,6 +13,9 @@ namespace mr
 
 ///
 /// Constructor
+/// Reference: http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients
+/// Reference: https://statistics.laerd.com/stata-tutorials/linear-regression-using-stata.php
+/// Reference: https://dss.princeton.edu/online_help/analysis/interpreting_regression.htm
 ///
 RegressionResultBinder::RegressionResultBinder( LinearRegressionPtr regression,
                                                 bool multi_variate )
@@ -29,7 +32,12 @@ RegressionResultBinder::RegressionResultBinder( LinearRegressionPtr regression,
 RegressionResultBinder::~RegressionResultBinder( )
 {
 }
+
 ////////////////////////////////////////////////////////////////////////////////
+/// Reference: http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients
+/// Reference: https://statistics.laerd.com/stata-tutorials/linear-regression-using-stata.php
+/// Reference: https://dss.princeton.edu/online_help/analysis/interpreting_regression.htm
+
 void
 RegressionResultBinder::appendResults( const RegressionMask& mask )
 {

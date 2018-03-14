@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b672aec9-bac8-483e-80aa-6f267085854d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatisticalAnalysis/DefaultMatrixInversionPolicy.cpp" afterPath="$PROJECT_DIR$/StatisticalAnalysis/DefaultMatrixInversionPolicy.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatisticalAnalysis/FtSignificance.cpp" afterPath="$PROJECT_DIR$/StatisticalAnalysis/FtSignificance.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatisticalAnalysis/LagAccumulator.cpp" afterPath="$PROJECT_DIR$/StatisticalAnalysis/LagAccumulator.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp" afterPath="$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp" afterPath="$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ANOVA_F.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/ANOVA_F.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="88" column="84" lean-forward="false" selection-start-line="88" selection-start-column="84" selection-end-line="88" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ANOVA_t.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/ANOVA_t.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,21 +84,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LagAccumulator.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LagAccumulator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/LagAccumulator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="512">
               <caret line="104" column="48" lean-forward="true" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Synopsis.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/Synopsis.cpp">
+      <file leaf-file-name="LagSequence.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1010">
-              <caret line="416" column="5" lean-forward="true" selection-start-line="416" selection-start-column="5" selection-end-line="416" selection-end-column="5" />
+            <state relative-caret-position="-712">
+              <caret line="41" column="66" lean-forward="false" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PopulationSummary.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="244" column="63" lean-forward="false" selection-start-line="244" selection-start-column="63" selection-end-line="244" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -138,6 +137,8 @@
         <option value="$PROJECT_DIR$/StatisticalAnalysis/DefaultMatrixInversionPolicy.cpp" />
         <option value="$PROJECT_DIR$/StatisticalAnalysis/FtSignificance.cpp" />
         <option value="$PROJECT_DIR$/StatisticalAnalysis/LagAccumulator.cpp" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp" />
       </list>
     </option>
   </component>
@@ -458,20 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/PredictedValueFunctor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -632,8 +619,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/LagAccumulator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="512">
           <caret line="104" column="48" lean-forward="true" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/LagSequence.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-712">
+          <caret line="41" column="66" lean-forward="false" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/PopulationSummary.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="244" column="63" lean-forward="false" selection-start-line="244" selection-start-column="63" selection-end-line="244" selection-end-column="63" />
           <folding />
         </state>
       </provider>

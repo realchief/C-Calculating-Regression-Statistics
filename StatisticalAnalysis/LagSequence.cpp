@@ -38,6 +38,8 @@ LagSequence::~LagSequence( )
 
 ///
 /// Build the lag sequence by manipulating the sample's episodes
+/// Reference: http://www.statisticssolutions.com/assumptions-of-linear-regression/
+/// Reference: https://en.wikipedia.org/wiki/Regression_validation
 ///
 void
 LagSequence::build( )

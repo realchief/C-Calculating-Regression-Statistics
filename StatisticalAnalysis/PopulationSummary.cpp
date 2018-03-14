@@ -160,6 +160,10 @@ PopulationSummary::stdError( ) const
 
 ///
 /// Calculate Welch's t test statistic (this = total != subset)
+/// Reference: https://en.wikipedia.org/wiki/Welch%27s_t-test
+/// Reference: https://onlinecourses.science.psu.edu/stat414/node/203
+/// Reference: https://en.wikipedia.org/wiki/Student%27s_t-test
+///
 ///
 StatisticsResult    
 PopulationSummary::welch_t( const PopulationSummary& subset ) const
@@ -235,6 +239,10 @@ PopulationSummary::groupRelative_F( const PopulationSummary& subset ) const
 
 ///
 /// Calculate the zero relative t statistics (this == local == total)
+/// Reference: https://onlinecourses.science.psu.edu/stat414/node/203
+/// Reference: http://www.sthda.com/english/wiki/welch-t-test
+/// Reference: https://en.wikipedia.org/wiki/Welch%27s_t-test
+/// Reference: https://en.wikipedia.org/wiki/Student%27s_t-test
 ///
 StatisticsResult    
 PopulationSummary::zeroRelative_t( ) const
@@ -261,6 +269,10 @@ PopulationSummary::zeroRelative_t( ) const
 
 ///
 /// Calculate the zero relative t statistics (local == total)
+/// Reference: https://onlinecourses.science.psu.edu/stat414/node/203
+/// Reference: http://www.sthda.com/english/wiki/welch-t-test
+/// Reference: https://en.wikipedia.org/wiki/Welch%27s_t-test
+/// Reference: https://en.wikipedia.org/wiki/Student%27s_t-test
 ///
 StatisticsResult    
 PopulationSummary::zeroRelative_F( ) const

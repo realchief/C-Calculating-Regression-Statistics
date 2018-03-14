@@ -69,6 +69,8 @@ CorrelationResult::CorrelationResult( double correlation,
 
 ///
 /// Return true if this is a valid correlation result
+/// Reference: http://www.kean.edu/~fosborne/bstat/09rc.html
+/// Reference: http://www.alcula.com/calculators/statistics/linear-regression/
 ///
 bool
 CorrelationResult::isValid( ) const
@@ -80,6 +82,7 @@ CorrelationResult::isValid( ) const
 ///
 /// Calculate the probability that the correlation of two series is significant 
 //  based on Fisher's z transformation and the students t-test from NR page 639
+/// Reference: http://www.alcula.com/calculators/statistics/correlation-coefficient/
 ///
 void 
 CorrelationResult::calculateSignificance( )
@@ -108,6 +111,10 @@ CorrelationResult::calculateSignificance( )
 ///
 /// Calculate the 95% Confidence Interval for the correlation based on Fisher's 
 //  z transformation and the students t-test from NR page 617
+/// Reference: https://www.danielsoper.com/statcalc/calculator.aspx?id=26
+/// Reference: https://www.danielsoper.com/statcalc/calculator.aspx?id=90
+/// Reference: http://stattrek.com/regression/slope-confidence-interval.aspx?Tutorial=AP
+/// Reference: http://www.real-statistics.com/regression/confidence-and-prediction-intervals/
 ///
 void 
 CorrelationResult::calculateConfidenceInterval()

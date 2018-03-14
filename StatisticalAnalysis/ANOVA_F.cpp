@@ -85,6 +85,8 @@ ANOVA_F::calculateResult()
 
 ///
 /// Calculate the result for the given total statistics
+/// Reference: https://www.hackmath.net/en/calculator/linear-regression
+/// Reference: http://www.alcula.com/calculators/statistics/correlation-coefficient/
 ///
 void
 ANOVA_F::calculateResult( uint32_t total_count, 

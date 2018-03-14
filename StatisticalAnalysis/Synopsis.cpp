@@ -49,6 +49,8 @@ Synopsis::~Synopsis( )
 
 ///
 /// Assignment operator
+/// Reference1: http://nasacj.net/?p=189
+/// Reference2: https://www.geeksforgeeks.org/linear-regression-python-implementation/
 ///
 void
 Synopsis::operator=( const Synopsis& rhs )
@@ -69,6 +71,7 @@ Synopsis::operator=( const Synopsis& rhs )
 
 ///
 /// Return the counter for the index
+/// Reference: https://octave.sourceforge.io/optim/function/LinearRegression.html
 ///
 uint32_t 
 Synopsis::counter( uint32_t  index ) const
@@ -81,6 +84,7 @@ Synopsis::counter( uint32_t  index ) const
 
 ///
 /// Initialise the analysis
+/// Reference: https://octave.sourceforge.io/optim/function/LinearRegression.html
 ///
 void
 Synopsis::initialise( )
@@ -108,6 +112,7 @@ Synopsis::initialise( )
 
 ///
 /// Analyse the value, and include in appropriate accumulators
+/// Reference http://nasacj.net/?p=189
 ///
 void
 Synopsis::addValue( double value )
@@ -125,6 +130,7 @@ Synopsis::addValue( double value )
 
 ///
 /// Increment the appropriate counter for the given NAN
+/// Reference https://octave.sourceforge.io/optim/function/LinearRegression.html
 ///
 void
 Synopsis::accumulateNaN( int nan_type )
@@ -158,6 +164,7 @@ Synopsis::accumulateNaN( int nan_type )
 
 ///
 /// Accumulate value
+/// https://octave.sourceforge.io/optim/function/LinearRegression.html
 ///
 void
 Synopsis::accumulateValue( double value )
@@ -198,6 +205,7 @@ Synopsis::accumulateValue( double value )
 
 ///
 /// Calculate and cache Welch's t test value given the summary of all rows
+/// Reference https://www.mathworks.com/help/stats/linearmodel-class.html?requestedDomain=true
 ///
 void
 Synopsis::setGrpRel_t( const Synopsis& all_rows )
@@ -252,6 +260,8 @@ Synopsis::calculateMean( )
 
 ///
 /// Return the mean / standard deviation
+/// Reference1: https://en.wikipedia.org/wiki/Standard_deviation
+/// Reference2: http://www.lboro.ac.uk/media/wwwlboroacuk/content/mlsc/downloads/mean_median_mode.pdf
 ///
 double
 Synopsis::meanPerStdDev( ) const
@@ -282,6 +292,8 @@ Synopsis::meanPerStdDev( ) const
 
 ///
 /// Return the mean / standard error (t-stat)
+/// Reference: http://davidmlane.com/hyperstat/A103735.html
+/// Reference: http://www.statisticshowto.com/what-is-the-standard-error-of-a-sample/
 ///
 double
 Synopsis::meanPerStdErr( ) const
@@ -327,6 +339,10 @@ Synopsis::nanCount( ) const
 
 ///
 /// Return the standard-deviation of the results
+/// Reference1: https://www.khanacademy.org/math/probability/data-distributions-a1/summarizing-spread-distributions/a/calculating-standard-deviation-step-by-step
+/// Reference2: https://en.wikipedia.org/wiki/Standard_deviation
+/// Reference3: https://www.mathsisfun.com/data/standard-deviation-formulas.html
+///
 ///
 double
 Synopsis::standardDeviation( ) const
@@ -354,6 +370,8 @@ Synopsis::standardDeviation( ) const
 
 ///
 /// Return the standard-error of the results
+/// Reference: http://davidmlane.com/hyperstat/A103735.html
+/// Reference: http://www.statisticshowto.com/what-is-the-standard-error-of-a-sample/
 ///
 double
 Synopsis::standardError( ) const
@@ -388,6 +406,9 @@ Synopsis::meanSquares( ) const
 
 ///
 /// Update the median value of the rows
+/// Reference: https://stackoverflow.com/questions/40319985/how-to-calculate-mean-values-from-a-linear-model-in-r
+/// Reference: https://rstudio-pubs-static.s3.amazonaws.com/119859_a290e183ff2f46b2858db66c3bc9ed3a.html
+/// Reference: https://www1.udel.edu/johnmack/frec424/regression/
 ///
 void
 Synopsis::calculateMedian( )
@@ -463,7 +484,7 @@ Synopsis::formatted( const std::string& sep )
     calculateMedian();
 
     result  << "Min, Max: "  << "["  << minimum() << "," << maximum() << "]"    << sep
-            << "Mean____: "  << *mean() << " ±" << standardError()              << sep
+            << "Mean____: "  << *mean() << " ï¿½" << standardError()              << sep
             << "StdDev__: "  << standardDeviation()                             << sep
             << "Median__: "  << *median()                                       << sep
             << "Count___: "  << count()                                         << sep
